@@ -1,0 +1,195 @@
+.main-nav {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  border-bottom: 0.25rem solid black;
+}
+
+.main-nav > a,
+.dropdown {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  background: rgb(62, 122, 123);
+  border: 1px solid #ccc;
+}
+
+/* @media (max-width: 768px) {
+  .main-nav {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .main-nav > a,
+  .dropdown {
+    flex: 1 1 50%;
+    min-height: 56px;
+  }
+
+  .dropdown-content {
+    position: static;
+    min-width: 100%;
+  }
+} */
+
+
+  
+.main-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.home-link {
+  padding: 0;
+  overflow: hidden;
+}
+
+.home-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dropbtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 220px;
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: black;
+  background: white;
+}
+
+.dropdown-content a:hover {
+  background: rgb(62, 122, 123);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* @media (max-width: 600px) {
+  .main-nav {
+    height: 3.5rem; /* 56px */
+  }
+} */
+
+body {
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 1rem;
+    min-height: calc(100vh - 64px - 2.5rem); /* Adjust for nav and footer height */
+}
+
+.image-placeholder {
+    width: 100%;
+    max-width: 800px;
+    height: 220px;
+    background: #dfe9e9;
+    border: 2px dashed #7aa0a0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #456a6a;
+    font-weight: 600;
+    margin: 0 auto 1.5rem auto;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.bio-card {
+    background: #f8f8f8;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.bio-card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.emily-photo {
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.bio-card-content {
+    padding: 1rem;
+}
+
+.bio-card-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.bio-card-content p {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.bio-card-content a {
+    color: rgb(62, 122, 123);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bio-card-content a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: left;
+    color: black;
+    background-color: rgb(68, 117, 118);
+    padding: 0.3125rem 1.875rem 0.3125rem 1rem;
+    border-top: 0.25rem solid black;
+}
+
+footer p {
+    font-size: 0.875rem;
+}
+
+
+
+/* color scheme: Teal rgb(62, 122, 123), turquoise rgb(100, 188, 182), pale green rgb(172, 214, 200), pale blue rgb(150, 224, 221), yellow rgba(245, 255, 107, 0.824), cream rgb(241, 245, 211), dark purlpe rgb(115, 33, 92) */
