@@ -130,6 +130,75 @@ main {
     margin: 0 auto 1.5rem auto;
 }
 
+
+/* Styles for homepage feature boxes */
+
+.feature-boxes{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  padding:24px;
+}
+
+.feature-box{
+  display:flex;
+  width:90%;
+  max-width:1100px;
+  background:#ffffff;
+  border:1px solid #ddd;
+  border-radius:10px;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+
+.feature-box:hover{
+  transform:translateY(-4px);
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+}
+
+.feature-image{
+  width:34%;
+  min-height:140px;
+  background-color:#eee;
+  background-size:cover;
+  background-position:center;
+}
+
+.feature-content{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.feature-content h2{
+  margin:0 0 8px;
+  font-size:1.4rem;
+}
+
+.feature-content p{
+  margin:0;
+  color:#444;
+}
+
+/* Variant placeholder backgrounds — replace with real images if available */
+.feature-about{background-image:linear-gradient(135deg,#f6f0ff,#e9e1ff);} 
+.feature-programs{background-image:linear-gradient(135deg,#e8fbff,#d6f5ff);} 
+.feature-support{background-image:linear-gradient(135deg,#fff7e8,#fff0d1);} 
+.feature-contact{background-image:linear-gradient(135deg,#e8fff0,#dfffe6);} 
+
+/* Responsive: stack image above content on small screens */
+@media (max-width:700px){
+  .feature-box{flex-direction:column;}
+  .feature-image{width:100%; height:160px;}
+  .feature-content{padding:14px;}
+}
+
+
 .bio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
