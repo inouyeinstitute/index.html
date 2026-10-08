@@ -248,16 +248,6 @@ main {
   object-fit: cover;
 }
 
-/* Portrait image used on individual bio-detail pages */
-.bio-detail-image {
-  width: 100%;
-  height: auto; /* aspect-ratio will control height */
-  aspect-ratio: 2 / 3; /* consistent portrait ratio (w:h) */
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
 .emily-photo {
   object-fit: cover;
   object-position: 50% 20%;
