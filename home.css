@@ -49,6 +49,7 @@
   padding: 0;
   overflow: hidden;
   background: white;
+  position: relative; /* needed for overlay */
 }
 
 .home-link img {
@@ -58,6 +59,20 @@
   object-position: center;
   display: block;
   background: white;
+}
+
+/* overlay to make hover/shade obvious over the image */
+.home-link::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(62, 122, 123, 0); /* start transparent */
+  transition: background .18s ease;
+  pointer-events: none;
+}
+.home-link:hover::after,
+.home-link:focus::after{
+  background: rgba(62, 122, 123, 0.72); /* visible hover shade */
 }
 
 .dropbtn {
