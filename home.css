@@ -266,6 +266,28 @@ main {
   display: block;
 }
 
+/* Wrapper to align bio detail content to the image width and center it */
+.bio-detail-wrapper {
+  max-width: 480px; /* match image max-width */
+  width: 100%;
+  margin: 0 auto 1.25rem; /* center on page */
+  padding: 0 0.5rem; /* small side padding on narrow screens */
+  box-sizing: border-box;
+}
+
+.bio-detail-wrapper p {
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+/* Slightly narrower text block inside the wrapper so copy doesn't span full image width */
+.bio-detail-wrapper .bio-detail-text {
+  max-width: 92%; /* a bit narrower than the image/container */
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 /* Extra rounded corner variant for specific images */
 .bio-detail-image.rounded {
   border-radius: 48px; /* larger rounded corners */
