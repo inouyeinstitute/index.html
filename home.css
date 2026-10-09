@@ -298,6 +298,13 @@ main {
   line-height: 1.5;
 }
 
+/* Center the detail page title when placed inside the wrapper */
+.bio-detail-wrapper h2 {
+  text-align: center;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.5rem;
+}
+
 /* Slightly narrower text block inside the wrapper so copy doesn't span full image width */
 .bio-detail-wrapper .bio-detail-text {
   max-width: 92%; /* a bit narrower than the image/container */
