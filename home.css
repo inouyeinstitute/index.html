@@ -244,9 +244,35 @@ main {
 .bio-card img {
   display: block;
   width: 100%;
-  height: auto; /* let aspect-ratio control height */
+  max-width: 480px; /* constrain large images */
+  height: auto; /* aspect-ratio will control height */
   aspect-ratio: 3 / 4; /* portrait orientation (w:h) */
+  object-fit: contain; /* avoid cropping/zooming */
+  object-position: center;
+  border-radius: 10px;
+  margin: 0 auto 1rem; /* center and add spacing */
+}
+
+/* Individual bio detail image (fine control on detail pages) */
+.bio-detail-image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+/* Extra rounded corner variant for specific images */
+.bio-detail-image.rounded {
+  border-radius: 48px; /* larger rounded corners */
+  border: 6px solid rgb(123, 62, 62); /* slightly thicker complementary warm red */
+  box-shadow: 0 6px 14px rgba(123, 62, 62, 0.12);
   object-fit: cover;
+  object-position: center;
 }
 
 .emily-photo {
