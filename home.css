@@ -275,6 +275,26 @@ main {
   object-position: center;
 }
 
+/* Rounded card variant for bios listing to match bio-detail image look */
+.bio-card.rounded {
+  border-radius: 48px;
+  border: 6px solid rgb(123, 62, 62);
+  box-shadow: 0 6px 14px rgba(123, 62, 62, 0.12);
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.bio-card.rounded img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover; /* fill and crop to card */
+  object-position: center;
+  border-radius: 0; /* let container handle rounding */
+  margin: 0; /* remove extra spacing inside card */
+  display: block;
+}
+
 .emily-photo {
   object-fit: cover;
   object-position: 50% 20%;
