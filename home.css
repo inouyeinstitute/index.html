@@ -13,7 +13,7 @@
   justify-content: center;
   position: relative;
   text-decoration: none;
-  font-size: larger;
+  font-size: 1.05rem; /* base nav font size */
   color: black;
   background: rgb(62, 122, 123);
   border: 1px solid black;
@@ -74,6 +74,24 @@
 .home-link:hover::after,
 .home-link:focus::after{
   background: rgba(62, 122, 123, 0.72); /* visible hover shade */
+}
+
+/* Responsive nav font sizing: scale down on narrower viewports */
+@media (max-width: 900px) {
+  .main-nav > a,
+  .dropdown {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-nav > a,
+  .dropdown {
+    font-size: 0.82rem; /* smaller, mobile-friendly */
+  }
+  .home-link {
+    flex: 0 0 48px; /* slightly smaller logo space on narrow screens */
+  }
 }
 
 .dropbtn {
