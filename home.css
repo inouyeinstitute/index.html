@@ -442,6 +442,7 @@ main {
 .feature-contact{background-image:linear-gradient(135deg,#e8fff0,#dfffe6);} 
 .feature-contact-home{
   background-image:url("Giant twister.jpg");
+  background-position:center 30%;
 }
 
 /* Responsive: stack image above content on small screens */
