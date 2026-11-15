@@ -19,6 +19,24 @@
   border: 1px solid black;
 }
 
+/* Responsive nav font sizing: scale down on narrower viewports */
+@media (max-width: 900px) {
+  .main-nav > a,
+  .dropdown {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-nav > a,
+  .dropdown {
+    font-size: 0.82rem; /* smaller, mobile-friendly */
+  }
+  .home-link {
+    flex: 0 0 48px; /* slightly smaller logo space on narrow screens */
+  }
+}
+
 /* @media (max-width: 768px) {
   .main-nav {
     flex-wrap: wrap;
@@ -37,8 +55,6 @@
   }
 } */
 
-
-  
 .main-nav a {
   text-decoration: none;
   color: white;
@@ -74,24 +90,6 @@
 .home-link:hover::after,
 .home-link:focus::after{
   background: rgba(62, 122, 123, 0.72); /* visible hover shade */
-}
-
-/* Responsive nav font sizing: scale down on narrower viewports */
-@media (max-width: 900px) {
-  .main-nav > a,
-  .dropdown {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .main-nav > a,
-  .dropdown {
-    font-size: 0.82rem; /* smaller, mobile-friendly */
-  }
-  .home-link {
-    flex: 0 0 48px; /* slightly smaller logo space on narrow screens */
-  }
 }
 
 .dropbtn {
@@ -359,17 +357,86 @@ main {
   color:#444;
 }
 
+/* Full-width image banners for the homepage links. */
+.feature-boxes-home{
+  align-items:stretch;
+  gap:16px;
+  margin:-1rem;
+  padding:0;
+}
+
+.feature-boxes-home .feature-box{
+  position:relative;
+  width:100%;
+  max-width:none;
+  min-height:220px;
+  border:0;
+  border-radius:14px;
+  color:#fff;
+  box-shadow:0 4px 14px rgba(0,0,0,.24);
+  transition:box-shadow .18s ease;
+}
+
+.feature-boxes-home .feature-box:hover{
+  transform:none;
+  box-shadow:0 7px 20px rgba(0,0,0,.3);
+}
+
+.feature-boxes-home .feature-box:focus-visible{
+  outline:3px solid #000;
+  outline-offset:-3px;
+}
+
+.feature-boxes-home .feature-box::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(90deg,rgba(0,0,0,.68),rgba(0,0,0,.12));
+}
+
+.feature-boxes-home .feature-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  min-height:0;
+}
+
+.feature-boxes-home .feature-content{
+  position:relative;
+  z-index:2;
+  width:min(100%, 34rem);
+  padding:24px 5vw;
+  text-shadow:0 1px 3px rgba(0,0,0,.75);
+}
+
+.feature-boxes-home .feature-content h2{
+  font-size:1.7rem;
+}
+
+.feature-boxes-home .feature-content p{
+  color:#fff;
+}
+
 /* Variant placeholder backgrounds — replace with real images if available */
 .feature-about{background-image:linear-gradient(135deg,#f6f0ff,#e9e1ff);} 
+.feature-about-home{background-image:url("Heart Mountain relocation camp.jpg");}
 .feature-programs{background-image:linear-gradient(135deg,#e8fbff,#d6f5ff);} 
+.feature-programs-home{background-image:url("Popsicle kids.jpg");}
 .feature-support{background-image:linear-gradient(135deg,#fff7e8,#fff0d1);} 
+.feature-support-home{background-image:url("train close up.png");}
 .feature-contact{background-image:linear-gradient(135deg,#e8fff0,#dfffe6);} 
+.feature-contact-home{background-image:url("Melissa on recorder.jpg");}
 
 /* Responsive: stack image above content on small screens */
 @media (max-width:700px){
   .feature-box{flex-direction:column;}
   .feature-image{width:100%; height:160px;}
   .feature-content{padding:14px;}
+  .feature-boxes-home .feature-box{min-height:180px;}
+  .feature-boxes-home .feature-content{padding:20px 6vw;}
+  .feature-boxes-home .feature-content h2{font-size:1.45rem;}
 }
 
 
