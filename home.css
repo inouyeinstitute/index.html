@@ -419,6 +419,16 @@ main {
   color:#fff;
 }
 
+@media (min-width:900px){
+  .feature-boxes-home{
+    align-items:center;
+  }
+
+  .feature-boxes-home .feature-box{
+    width:75%;
+  }
+}
+
 /* Variant placeholder backgrounds — replace with real images if available */
 .feature-about{background-image:linear-gradient(135deg,#f6f0ff,#e9e1ff);} 
 .feature-about-home{background-image:url("Heart Mountain relocation camp.jpg");}
