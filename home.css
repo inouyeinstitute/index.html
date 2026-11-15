@@ -297,6 +297,13 @@ main {
     margin: 0 auto 1.5rem auto;
 }
 
+.who-we-are-copy {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
 
 /* Styles for homepage feature boxes */
 
