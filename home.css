@@ -435,14 +435,13 @@ main {
 .feature-programs{background-image:linear-gradient(135deg,#e8fbff,#d6f5ff);} 
 .feature-programs-home{
   background-image:url("Popsicle kids.jpg");
-  background-position:center 40%;
+  background-position:center 30%;
 }
 .feature-support{background-image:linear-gradient(135deg,#fff7e8,#fff0d1);} 
 .feature-support-home{background-image:url("train close up.png");}
 .feature-contact{background-image:linear-gradient(135deg,#e8fff0,#dfffe6);} 
 .feature-contact-home{
   background-image:url("Giant twister.jpg");
-  background-position:center 40%;
 }
 
 /* Responsive: stack image above content on small screens */
