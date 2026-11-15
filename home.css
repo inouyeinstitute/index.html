@@ -287,28 +287,14 @@ main {
     min-height: calc(100vh - 64px - 2.5rem); /* Adjust for nav and footer height */
 }
 
-.image-placeholder {
+.about-image {
     width: 100%;
     max-width: 800px;
     height: 220px;
-    background: #dfe9e9;
-    border: 2px dashed #7aa0a0;
+    object-fit: cover;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #456a6a;
-    font-weight: 600;
-    margin: 0 auto 1.5rem auto;
-}
-
-.about-image {
     display: block;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1.5rem auto;
 }
 
 
@@ -451,7 +437,7 @@ main {
 .feature-contact{background-image:linear-gradient(135deg,#e8fff0,#dfffe6);} 
 .feature-contact-home{
   background-image:url("Giant twister.jpg");
-  background-position:center 20%;
+  background-position:center 30%;
 }
 
 /* Responsive: stack image above content on small screens */
