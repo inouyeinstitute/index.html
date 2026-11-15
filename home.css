@@ -362,7 +362,7 @@ main {
   align-items:stretch;
   gap:16px;
   margin:-1rem;
-  padding:0;
+  padding:16px 0;
 }
 
 .feature-boxes-home .feature-box{
