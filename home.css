@@ -290,7 +290,7 @@ main {
 .about-image {
     width: 100%;
     max-width: 800px;
-    height: 220px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
@@ -371,7 +371,7 @@ main {
   position:relative;
   width:100%;
   max-width:none;
-  min-height:220px;
+  min-height:400px;
   border:0;
   border-radius:14px;
   color:#fff;
