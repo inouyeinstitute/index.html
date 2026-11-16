@@ -153,7 +153,7 @@
   .main-nav > .home-link {
     position: absolute;
     left: calc(50% - 32px);
-    width: min(55vw, 500px);
+    width: min(70vw, 900px);
     flex: 0 0 auto;
     transform: translateX(-50%);
   }
